@@ -1,0 +1,22 @@
+{
+    "name": "shopify",
+    "title": "jQuery Shopify",
+    "description": "Turn your existing website into an online store using Shopify.",
+    "keywords": [ "ecommerce" ],
+    "version": "0.1.0",
+    "author": {
+        "name": "Matt Helm",
+        "url": "https://github.com/matthelm"
+    },
+    "licenses": [
+        {
+            "url": "https://github.com/Shopify/jquery.shopify/blob/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/Shopify/jquery.shopify/issues",
+    "homepage": "https://www.shopify.com",
+    "docs": "https://github.com/Shopify/jquery.shopify",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

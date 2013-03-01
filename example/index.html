@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://raw.github.com/carhartl/jquery-cookie/master/jquery.cookie.js"></script>
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+  </style>
+
+  <script src="../lib/jquery.shopify.js"></script>
+
+  <script>
+    jQuery(function($){
+      $.shopify.start()
+    });
+  </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">Dundas</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- <a id="cookietest" class="btn" href="#">Add To Cart</a> -->
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="hero-unit">
+    <h3>Cart <span data-cart-length></span></h3>
+    <p id="cart-empty">You don't have any items in your cart.</p>
+    <ul id="cart-items" class="hidden"></ul>
+    <h4 data-checkout>Checkout</h4>
+  </div>
+
+  <!-- Example row of columns -->
+  <div class="row" id="shopify-widgets">
+    <div class="span4 shopify-widget-product" data-product="carbon-900">
+      <h2 data-product-title></h2>
+      <p data-product-body-html></p>
+      <p><a class="btn" href="#" data-add-product>Add to cart &raquo;</a></p>
+    </div>
+    <div class="span4 shopify-widget-product" data-product="123-w-longitude-blend">
+      <h2 data-product-title></h2>
+      <p data-product-body-html></p>
+      <p><a class="btn" href="#" data-add-product="2">Add to cart &raquo;</a></p>
+    </div>
+    <div class="span4 shopify-widget-product" data-product="colombia-los-idolos-decaf">
+      <h2 data-product-title></h2>
+      <p data-product-body-html></p>
+      <p><a class="btn" href="#" data-add-product="3">Add to cart &raquo;</a></p>
+    </div>
+  </div>
+</div> <!-- /container -->
+
+</body>
+</html>
+
+
+
